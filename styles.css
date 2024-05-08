@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
 body {
     background-color: #fbfbfb;
 }
@@ -30,4 +38,28 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+/* make it look good on my iPhone */
+
+@media screen and (max-width: 768px) {
+    
+    .disk__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 170px;
+    
+    }
+
+    .disk {
+        width: 300px;
+        height: 300px;
+        background-image: url('cd.png'); 
+        background-size: cover;
+        position: relative;
+        animation: rotate 5s linear infinite;
+    
+    }
+
 }
