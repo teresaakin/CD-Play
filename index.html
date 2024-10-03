@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Spinning CD</title>
+        <title>Vanilla.js Carousel</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script src="index.js" defer></script>
+
     </head>
 </html>
 
@@ -17,18 +19,24 @@
     </div> -->
 
     <!--TRIO DISC TEST-->
-    <div class="carousel">
-        <div class ="disc__container">
-            <div class="disc__one">
-                <img src="cd.png" width="400" height="400">
+    <div class="carousel-wrapper">
+        <div class="title" id="disc__title"></div> <!--title container-->
+        <button class="nav-btn prev-btn">&lt;</button>
+            <div class="carousel">
+                <div class ="disc__container">
+                    <div class="disc__item" data-title="Disc #1">
+                        <img src="cd.png" width="200" height="200">
+                    </div>
+                    <div class="disc__item" data-title="Disc #2">
+                        <img src="simsCloud.png"  width="200" height="200">
+                    </div>
+                    <div class="disc__item" data-title="Disc #3">
+                        <img src="simsLove.png"  width="200" height="200">
+                    </div>
+                </div>
             </div>
-            <div class="disc__two">
-                <img src="simsCloud.png"  width="400" height="400">
-            </div>
-            <div class="disc__three">
-                <img src="simsLove.png"  width="400" height="400">
-            </div>
-        </div>
+        <button class="nav-btn next-btn">&gt;</button>
     </div>
+
 
 </body>
